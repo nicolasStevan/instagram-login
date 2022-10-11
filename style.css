@@ -16,18 +16,21 @@ a{
     column-gap: 20px;
     margin: 40px auto 0;
 }
-.carousel{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-    align-items: center;
-    justify-content: space-between;
+
+.img-celular{
+    width: 17rem;
 }
-#img{
-    object-fit: cover;
-    height: 100%;
-    width: 380%;
+
+.imgcel{
+    height: 33.7rem;
+    position: absolute;
+    left: 33.1rem;
+    top: 3.7rem;
+    transition: opacity 2s ease-in-out;
+    width: 15.4rem;
 }
+
+
 .pitch{
     height: 618px;
     background: url('./img/phone.png') no-repeat center;

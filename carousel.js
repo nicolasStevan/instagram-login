@@ -1,18 +1,13 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img , img");
+let imagem = document.getElementById("img2");
 
-let idx = 0;
-
-function carrosel(){
-    idx++;
-
-    if(idx > img.length - 1){
-        idx = 0; 
+function trocarImagem(){
+    if (imagem.style.opacity == 0){
+        imagem.style.opacity = 1;
+    } else {
+        imagem.style.opacity = 0;
     }
 
-    imgs.style.transform = `translateX(${-idx *100}px)`
 }
-
-setInterval(carrosel,1800);
-
-
+setInterval(() => {
+    trocarImagem();
+}, 3000);
